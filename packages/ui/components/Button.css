@@ -1,0 +1,132 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.btn-sm {
+  height: 32px;
+  padding: 0 var(--space-3);
+  font-size: 13px;
+}
+
+.btn-md {
+  height: 40px;
+  padding: 0 var(--space-4);
+  font-size: 15px;
+}
+
+.btn-lg {
+  height: 48px;
+  padding: 0 var(--space-6);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Variants */
+.btn-primary {
+  background-color: var(--color-navy-900);
+  color: var(--color-white);
+  border-color: var(--color-navy-900);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-navy-800);
+  border-color: var(--color-navy-800);
+  box-shadow: 0 2px 8px rgba(26, 53, 96, 0.25);
+}
+
+.btn-accent {
+  background-color: var(--color-gold-500);
+  color: var(--color-white);
+  border-color: var(--color-gold-500);
+}
+
+.btn-accent:hover:not(:disabled) {
+  background-color: var(--color-gold-600);
+  border-color: var(--color-gold-600);
+  box-shadow: 0 2px 8px rgba(200, 150, 62, 0.3);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-navy-900);
+  border-color: var(--color-navy-900);
+}
+
+.btn-outline:hover:not(:disabled) {
+  background-color: rgba(26, 53, 96, 0.05);
+}
+
+.btn-success {
+  background-color: var(--color-success-strong);
+  color: var(--color-white);
+  border-color: var(--color-success-strong);
+}
+
+.btn-success:hover:not(:disabled) {
+  background-color: #219653;
+  box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
+}
+
+.btn-danger {
+  background-color: var(--color-danger-strong);
+  color: var(--color-white);
+  border-color: var(--color-danger-strong);
+}
+
+.btn-danger:hover:not(:disabled) {
+  background-color: var(--color-danger-text);
+  box-shadow: 0 2px 8px rgba(169, 50, 38, 0.3);
+}
+
+/* Role colored buttons */
+.btn-role-admin {
+  background-color: var(--role-admin-color);
+  color: var(--color-white);
+}
+
+.btn-role-admin:hover:not(:disabled) {
+  background-color: var(--role-admin-hover);
+}
+
+.btn-role-alumni {
+  background-color: var(--color-navy-900);
+  color: var(--color-white);
+}
+
+.btn-role-alumni:hover:not(:disabled) {
+  background-color: var(--color-navy-800);
+}
+
+.btn-role-student {
+  background-color: var(--role-student-color);
+  color: var(--color-white);
+}
+
+.btn-role-student:hover:not(:disabled) {
+  background-color: var(--role-student-hover);
+}
+
+.btn-icon {
+  flex-shrink: 0;
+}

@@ -1,0 +1,33 @@
+.ui-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border-warm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ui-card-warm {
+  background-color: var(--color-bg-warm);
+  border-color: #F0E2C8;
+}
+
+.ui-card-navy {
+  background-color: var(--color-navy-900);
+  color: var(--color-text-on-navy);
+  border-color: var(--color-navy-700);
+}
+
+.ui-card-outline {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.ui-card-hoverable {
+  cursor: pointer;
+}
+
+.ui-card-hoverable:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}

@@ -1,0 +1,60 @@
+.avatar-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.avatar-chip-img,
+.avatar-chip-fallback {
+  border-radius: var(--radius-pill);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.avatar-chip-fallback {
+  background-color: var(--color-navy-900);
+  color: var(--color-gold-300);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-chip-sm .avatar-chip-img,
+.avatar-chip-sm .avatar-chip-fallback {
+  width: 28px;
+  height: 28px;
+  font-size: 13px;
+}
+
+.avatar-chip-md .avatar-chip-img,
+.avatar-chip-md .avatar-chip-fallback {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.avatar-chip-lg .avatar-chip-img,
+.avatar-chip-lg .avatar-chip-fallback {
+  width: 56px;
+  height: 56px;
+  font-size: 22px;
+}
+
+.avatar-chip-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.avatar-chip-name {
+  font-weight: 600;
+  color: var(--color-navy-900);
+}
+
+.avatar-chip-subtext {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}

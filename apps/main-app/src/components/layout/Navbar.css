@@ -1,0 +1,220 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  background-color: var(--color-navy-900);
+  border-bottom: 1px solid var(--color-navy-700);
+  z-index: 900;
+  color: var(--color-white);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 var(--space-6);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navbar-brand-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.menu-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-navy-700);
+  color: var(--color-white);
+  padding: 6px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-toggle-btn:hover {
+  background: var(--color-navy-700);
+  color: var(--color-gold-300);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo-icon-box {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, var(--color-gold-500), var(--color-gold-600));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  box-shadow: 0 2px 6px rgba(200, 150, 62, 0.4);
+}
+
+.logo-text-box {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-wordmark {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: 0.02em;
+}
+
+.brand-subtext {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--color-gold-300);
+  letter-spacing: 0.08em;
+}
+
+/* Center guest nav */
+.navbar-center-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: var(--color-text-on-navy-muted);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 6px 0;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-white);
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-gold-500);
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.user-profile-menu-wrap {
+  position: relative;
+}
+
+.user-profile-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background-color: var(--color-navy-800);
+  border: 1px solid var(--color-navy-700);
+  color: var(--color-white);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.user-role-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.user-menu-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 220px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-modal);
+  border: 1px solid var(--color-border-warm);
+  overflow: hidden;
+  z-index: 950;
+  color: var(--color-text-body);
+}
+
+.dropdown-header {
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-bg-page);
+  border-bottom: 1px solid var(--color-border-warm);
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-user-name {
+  font-weight: 600;
+  color: var(--color-navy-900);
+  font-size: 14px;
+}
+
+.dropdown-user-role {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 13px;
+  color: var(--color-navy-900);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: var(--color-bg-warm);
+}
+
+.dropdown-item-danger {
+  color: var(--color-danger-text);
+  border-top: 1px solid var(--color-border-warm);
+}
+
+.dropdown-item-danger:hover {
+  background-color: var(--color-danger-bg);
+}
+
+@media (max-width: 900px) {
+  .navbar-center-nav {
+    display: none;
+  }
+}

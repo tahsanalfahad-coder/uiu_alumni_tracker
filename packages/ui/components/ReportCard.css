@@ -1,0 +1,43 @@
+.report-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.report-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.report-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-blue-bg);
+  color: var(--color-navy-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.report-card-title {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-navy-900);
+  margin-bottom: var(--space-2);
+}
+
+.report-card-desc {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-5);
+  flex: 1;
+}
+
+.report-card-actions {
+  display: flex;
+  gap: var(--space-2);
+}

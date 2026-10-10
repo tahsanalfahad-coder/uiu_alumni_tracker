@@ -1,0 +1,130 @@
+.student-mentorship-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.my-requests-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.section-sub-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--color-navy-900);
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.request-row-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-bg-page);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-warm);
+}
+
+.req-mentor-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.req-mentor-name {
+  font-size: 14px;
+  color: var(--color-navy-900);
+}
+
+.req-topic {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.req-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.req-date {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.mentor-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mentor-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-3);
+}
+
+.mentor-name {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-navy-900);
+}
+
+.mentor-role {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-gold-600);
+  margin-bottom: var(--space-2);
+}
+
+.mentor-bio {
+  font-size: 13px;
+  color: var(--color-text-body);
+  margin-bottom: var(--space-4);
+  flex: 1;
+}
+
+.mentor-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+.mentor-card-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--color-border-warm);
+  padding-top: var(--space-3);
+}
+
+.accepted-mentors-card {
+  border: 2px solid var(--color-success-200, #bbf7d0);
+  background: linear-gradient(135deg, rgba(240, 253, 244, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.accepted-mentor-card-item {
+  background: #ffffff;
+  border: 1px solid var(--color-border-warm);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accepted-mentor-card-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+

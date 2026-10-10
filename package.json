@@ -1,0 +1,27 @@
+{
+  "name": "uiu-alumni-tracker-portal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm:dev:server\" \"npm:dev:main\" \"npm:dev:admin\"",
+    "dev:main": "npm run dev --workspace=@uiu/main-app",
+    "dev:admin": "npm run dev --workspace=@uiu/admin-app",
+    "dev:server": "npm run dev --workspace=uiu-alumni-portal-server",
+    "seed:admin": "npm run seed:admin --workspace=uiu-alumni-portal-server",
+    "seed:data": "npm run seed:data --workspace=uiu-alumni-portal-server",
+    "test": "npm run test --workspace=uiu-alumni-portal-server",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

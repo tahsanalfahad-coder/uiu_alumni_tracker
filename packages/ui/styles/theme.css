@@ -1,0 +1,218 @@
+/* UIU Alumni Tracker Portal - Design System & CSS Variables */
+
+:root {
+  /* Colors */
+  --color-navy-900: #1A3560;
+  --color-navy-800: #1E3D6B;
+  --color-navy-700: #24487A;
+  --color-navy-600: #2A4F85;
+  --color-navy-500: #3A6099;
+  --color-navy-400: #4A6A99;
+
+  --color-gold-600: #A87730;
+  --color-gold-500: #C8963E;
+  --color-gold-300: #E8B96A;
+
+  --color-bg-page:  #F7F5F0;
+  --color-bg-cream: #EDE9E0;
+  --color-bg-warm:  #FDF3E3;
+
+  --color-border-warm: #DDD8CC;
+  --color-text-muted: #8A8070;
+  --color-text-body:  #5A5048;
+  --color-white: #FFFFFF;
+
+  --color-blue-bg: #EAF0FB;
+  --color-blue-border: #8AABCC;
+  --color-blue-text: #2A5A8C;
+
+  --color-success-bg: #E8F8F1;
+  --color-success-text: #1E8449;
+  --color-success-strong: #27AE60;
+
+  --color-danger-bg: #FADBD8;
+  --color-danger-text: #C0392B;
+  --color-danger-strong: #A93226;
+
+  --color-text-on-navy: #FFFFFF;
+  --color-text-on-navy-muted: #B8C8E0;
+
+  /* Role Colors */
+  --role-admin-color: #A93226;
+  --role-admin-hover: #C0392B;
+  --role-admin-bg: #FDEDEC;
+
+  --role-alumni-color: #1A3560;
+  --role-alumni-accent: #C8963E;
+  --role-alumni-bg: #EAF0FB;
+
+  --role-student-color: #27AE60;
+  --role-student-hover: #219653;
+  --role-student-bg: #E8F8F1;
+
+  --role-guest-color: #5A5048;
+  --role-guest-bg: #EDE9E0;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(26,53,96,0.08), 0 1px 2px rgba(26,53,96,0.04);
+  --shadow-hover: 0 8px 24px rgba(26,53,96,0.12), 0 2px 6px rgba(26,53,96,0.06);
+  --shadow-modal: 0 20px 60px rgba(26,53,96,0.25);
+
+  /* Layout dimensions */
+  --navbar-height: 64px;
+  --sidebar-width: 230px;
+}
+
+/* Reset & Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-text-body);
+  background-color: var(--color-bg-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography styles */
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--color-navy-900);
+}
+
+h1, .heading-h1 {
+  font-family: var(--font-heading);
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--color-navy-900);
+}
+
+h2, .heading-h2 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--color-navy-900);
+}
+
+h3, .heading-h3 {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--color-navy-900);
+}
+
+.text-small {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.eyebrow-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* Common Layout Structure */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  margin-top: var(--navbar-height);
+  min-height: calc(100vh - var(--navbar-height));
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  padding: var(--space-6);
+  background-color: var(--color-bg-page);
+  max-width: 100%;
+  overflow-x: hidden;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content-with-sidebar {
+  margin-left: var(--sidebar-width);
+}
+
+.guest-content {
+  flex: 1;
+  background-color: var(--color-bg-page);
+}
+
+.container-centered {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+/* Micro-animations & utilities */
+.transition-all {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-navy-400);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-navy-600);
+}
+
+@media (max-width: 900px) {
+  .main-content-with-sidebar {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,59 @@
+.alumni-profile-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.profile-banner-card {
+  padding: var(--space-8) !important;
+}
+
+.profile-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.profile-identity {
+  display: flex;
+  gap: var(--space-5);
+  align-items: flex-start;
+}
+
+.profile-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.name-badge-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.profile-headline {
+  font-size: 16px;
+  color: var(--color-navy-900);
+}
+
+.profile-meta-line {
+  display: flex;
+  gap: var(--space-4);
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.profile-meta-line span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.section-title {
+  margin-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border-warm);
+  padding-bottom: var(--space-2);
+}

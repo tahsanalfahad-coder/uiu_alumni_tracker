@@ -1,0 +1,158 @@
+.alumni-donate-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.impact-banner-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-8) !important;
+}
+
+.impact-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.impact-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.impact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-left: 1px solid var(--color-navy-700);
+  padding-left: var(--space-8);
+}
+
+.impact-my-total {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  color: var(--color-white);
+}
+
+.fund-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.fund-card-top {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.fund-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-warm);
+  color: var(--color-gold-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.fund-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  color: var(--color-navy-900);
+}
+
+.fund-desc {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.fund-progress-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fund-progress-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.demo-disclaimer-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background-color: var(--color-bg-warm);
+  border: 1px solid #F0E2C8;
+  color: var(--color-gold-600);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: var(--space-4);
+}
+
+.fund-radio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin-top: 4px;
+}
+
+.fund-radio-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border: 1px solid var(--color-border-warm);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.fund-radio-card.active {
+  border-color: var(--color-gold-500);
+  background-color: var(--color-bg-warm);
+  font-weight: 600;
+}
+
+.quick-amount-row {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: 4px;
+}
+
+.amount-chip-btn {
+  flex: 1;
+  height: 40px;
+  border: 1px solid var(--color-border-warm);
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.amount-chip-btn.active {
+  background-color: var(--color-navy-900);
+  color: var(--color-white);
+  border-color: var(--color-navy-900);
+}
+
+.checkbox-line {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 13px;
+  cursor: pointer;
+}

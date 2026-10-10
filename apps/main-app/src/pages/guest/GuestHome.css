@@ -1,0 +1,334 @@
+.hero-section {
+  background: linear-gradient(180deg, var(--color-bg-page) 0%, var(--color-bg-warm) 100%);
+  padding: var(--space-10) 0;
+  border-bottom: 1px solid var(--color-border-warm);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.hero-subcopy {
+  font-size: 18px;
+  color: var(--color-text-body);
+  line-height: 1.6;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.glance-card {
+  padding: var(--space-8) !important;
+}
+
+.glance-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.glance-big-number {
+  font-family: var(--font-heading);
+  font-size: 44px;
+  color: var(--color-gold-300);
+  line-height: 1.1;
+}
+
+.glance-label {
+  font-size: 14px;
+  color: var(--color-text-on-navy-muted);
+  margin-bottom: var(--space-6);
+}
+
+.glance-mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  border-top: 1px solid var(--color-navy-700);
+  padding-top: var(--space-5);
+}
+
+.glance-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.glance-num {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.glance-desc {
+  font-size: 12px;
+  color: var(--color-text-on-navy-muted);
+}
+
+/* Stats Strip */
+.stats-strip-section {
+  background-color: var(--color-navy-900);
+  color: var(--color-white);
+  padding: var(--space-6) 0;
+  border-bottom: 1px solid var(--color-navy-700);
+}
+
+.stats-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--space-4);
+}
+
+.strip-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2);
+}
+
+.strip-icon {
+  color: var(--color-gold-500);
+  flex-shrink: 0;
+}
+
+.strip-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.strip-val {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1.2;
+}
+
+.strip-lbl {
+  font-size: 11px;
+  color: var(--color-text-on-navy-muted);
+}
+
+/* Sections */
+.section-padding {
+  padding: var(--space-10) 0;
+}
+
+.bg-cream {
+  background-color: var(--color-bg-cream);
+}
+
+.section-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+}
+
+.text-center-heading {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto var(--space-8) auto;
+}
+
+.grid-3-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.grid-2-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+/* Alumni Card */
+.alumni-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-4);
+}
+
+.alumni-role-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-navy-900);
+}
+
+.alumni-location {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.alumni-bio-snippet {
+  font-size: 14px;
+  color: var(--color-text-body);
+  margin-bottom: var(--space-4);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.alumni-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* Event Card */
+.event-card {
+  padding: 0 !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-img-wrap {
+  position: relative;
+  height: 180px;
+}
+
+.event-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.event-content {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.event-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-navy-900);
+  margin-bottom: var(--space-2);
+}
+
+.event-meta-row {
+  display: flex;
+  gap: var(--space-4);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-1);
+}
+
+.event-meta-row span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.event-loc {
+  font-size: 12px;
+  color: var(--color-gold-600);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: var(--space-3);
+}
+
+.event-desc {
+  font-size: 13px;
+  color: var(--color-text-body);
+  margin-bottom: var(--space-4);
+  flex: 1;
+}
+
+.event-capacity-row {
+  margin-bottom: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Role Entry Cards */
+.role-entry-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-top: 4px solid transparent;
+}
+
+.role-card-alumni { border-top-color: var(--color-gold-500); }
+.role-card-student { border-top-color: var(--role-student-color); }
+
+.role-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.role-card-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-navy-900);
+  margin-bottom: var(--space-4);
+}
+
+.role-benefit-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  flex: 1;
+}
+
+.role-benefit-list li {
+  font-size: 14px;
+  color: var(--color-text-body);
+}
+
+.role-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-strip-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-3-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 34px; }
+  .stats-strip-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-3-col, .grid-2-col { grid-template-columns: 1fr; }
+}
